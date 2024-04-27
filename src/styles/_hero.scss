@@ -1,0 +1,34 @@
+.hero {
+    height: 960px;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/Happy_Birthday.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        height: 640px;
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
